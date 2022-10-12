@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Flask app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+<form name = "addressForm" action="/" method ="post">
+<h1>Validate an Address!</h1><br>
+<label for="address">Address</label><br>
+<input type="text" name = "address"><br>
+
+<label for="city">City</label><br>
+<input type="text" name ="city"><br>
+
+<label for="stateCode">State Code</label><br>
+<input type="text" name = "stateCode"><br>
+
+<label for="zipCode">Zip Code</label><br>
+<input type="text" name ="zipCode"><br>
+
+<input type="submit" value="Submit">
+</form>
+<br><br>
+<p>blah blah</p>
+{{result}}
+
+</body>
+</html>
